@@ -1,23 +1,23 @@
-[push]
-  default = current
-[color]
-  ui = auto
+[user]
+	email = ebenoist@groupon.com
+  name = Erik Benoist
 [alias]
-  aa = add --all
-  ap = add --patch
-  ca = commit --amend
-  ci = commit -v
   co = checkout
-  create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
-  delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
-  merge-branch = !git checkout master && git merge @{-1}
-  pr = !hub pull-request
   st = status
-  up = !git fetch origin && git rebase origin/master
+  ci = commit
+  pu = pull --rebase
+  ps = push
+  br = branch
+  l = log --graph --pretty=format:'%an: %s - %Cred%h%Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[color]
+  diff = auto
+  status = auto
+  branch = auto
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = /Users/ebenoist/.gitignore
+  editor = vim
   autocrlf = input
-[merge]
-  ff = only
-[include]
-  path = .gitconfig.local
+[apply]
+  whitespace = nowarn
+[web]
+  browser = open

@@ -12,6 +12,9 @@ done
 # automatically enter directories without cd
 setopt auto_cd
 
+# set cdpath
+cdpath=(~/development/)
+
 # use vim as the visual editor
 export VISUAL=vim
 export EDITOR=$VISUAL
@@ -66,6 +69,9 @@ setopt EXTENDED_GLOB
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# exports
+[[ -f ~/.exports ]] && source ~/.exports
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
