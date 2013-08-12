@@ -9,11 +9,13 @@ source ~/.vim/auto_commands.vim
 set bg=dark
 set term=xterm-256color
 set background=dark
-set guifont=Menlo:h14
+set guifont=VeroMono:h14
 
-colorscheme jellybeans-lucas 
+colorscheme jellybeans-lucas
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
-
+if has("mouse")
+  set mouse=a
+endif

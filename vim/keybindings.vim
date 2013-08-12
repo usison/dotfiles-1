@@ -57,9 +57,10 @@ nmap <leader>gw :let @/="\\<<C-R><C-W>\\>"<CR>:set hls<CR>:silent Ggrep -w "<C-R
 " same in visual mode
 vmap <leader>gw y:let @/=escape(@", '\\[]$^*.')<CR>:set hls<CR>:silent Ggrep -F "<C-R>=escape(@", '\\"#')<CR>"<CR>:ccl<CR>:cw<CR><CR>
 
-map <Leader>rt :!gemtags -f .tags
+map <Leader>rt :!gemtags -f .gemtags && ctags -R -f .tags
 
 "Jump To Specs
 let g:speckySpecSwitcherKey  = "<C-S>x"
 
-
+"Jump to DASH
+nmap <silent> <leader>d <Plug>DashSearch

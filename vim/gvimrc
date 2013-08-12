@@ -31,7 +31,7 @@ set guicursor=a:blinkon0
 " Color:
 set bg=dark
 set background=dark
-set transparency=1
+set transparency=5
 
 " abbreviations
 iabbrev rdebug    require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger

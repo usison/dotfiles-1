@@ -39,12 +39,20 @@ let g:indent_guides_color_change_percent = 3
 let g:indent_guides_enable_on_vim_startup = 1
 
 " CtrlP
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/* 
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:ctrlp_max_height = 40
 let g:ctrlp_clear_cache_on_exit   = 1
-let g:ctrlp_working_path_mode     = "r" 
+let g:ctrlp_working_path_mode     = "ra"
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-"let g:ctrlp_user_command = 'find %s -type f'
+
+" if has("unix")
+  " let g:ctrlp_user_command = {
+        " \   'types': {
+        " \       1: ['.git/', 'cd %s && git ls-files']
+        " \   },
+        " \   'fallback': 'find %s -type f'
+        " \ }
+" endif
 
 

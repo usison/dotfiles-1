@@ -18,6 +18,7 @@ Bundle 'sjl/vitality.vim'
 
 Bundle 'kana/vim-textobj-user'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-haml'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
@@ -35,6 +36,11 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/Specky'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'scrooloose/syntastic'
+
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 filetype plugin indent on     " required!
 "

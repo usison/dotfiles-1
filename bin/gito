@@ -1,0 +1,4 @@
+#!/usr/local/bin/bash
+
+REPO=`git remote -v | head -n 1 | sed 's/\origin.*git.*:\(.*\)\.git.*fetch.*/\1/'`
+open http://github.groupondev.com/$REPO

@@ -13,5 +13,5 @@ setopt prompt_subst
 export PS1='$(_git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
 
 # load
-export PATH="/usr/local/opt/maven/bin:~/.bin:$PATH"
+export PATH="/usr/local/opt/maven/bin:$HOME/.bin:$PATH"
 
