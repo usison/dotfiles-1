@@ -2,7 +2,7 @@
 source ~/.vim/keybindings.gui.vim
 
 " Font: Choose font and enable anti-aliasing
-set guifont=Monaco:h14
+set guifont=Bitstream_Vera_Sans_Mono:h14
 set antialias
 
 " Use UTF-8 everywhere.

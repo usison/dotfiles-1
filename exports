@@ -1,4 +1,4 @@
-export JAVA_HOME="$(/usr/libexec/java_home)"
+export JAVA_HOME="$(/usr/libexec/java_home -v1.6)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
 export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
@@ -13,5 +13,5 @@ setopt prompt_subst
 export PS1='$(_git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
 
 # load
-export PATH="/usr/local/opt/maven/bin:$HOME/.bin:$PATH"
+export PATH="/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin:$PATH"
 

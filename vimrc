@@ -9,7 +9,6 @@ source ~/.vim/auto_commands.vim
 set bg=dark
 set term=xterm-256color
 set background=dark
-set guifont=VeroMono:h14
 
 colorscheme jellybeans-lucas
 

@@ -24,6 +24,7 @@ set t_Co=256                               " Support for xterm with 256 colors (
 set autoread                               " Autoload files
 set tags+=.tags                             " Set ctags
 set tags+=.gemtags                             " Set ctags
+set clipboard+=unnamed                     " Set system clipboard
 scriptencoding utf-8
 
 " INDENTATION
