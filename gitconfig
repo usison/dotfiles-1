@@ -1,6 +1,6 @@
 [user]
-	email = ebenoist@groupon.com
-  name = Erik Benoist
+	email = sascha.usison@groupon.com
+	name = Sascha Usison
 [alias]
   co = checkout
   st = status
@@ -9,15 +9,22 @@
   ps = push
   br = branch
   l = log --graph --pretty=format:'%an: %s - %Cred%h%Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+   slog = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 [color]
   diff = auto
   status = auto
   branch = auto
 [core]
-  excludesfile = /Users/ebenoist/.gitignore
+	excludesfile = /Users/sascha/.gitignore_global
   editor = vim
   autocrlf = input
 [apply]
   whitespace = nowarn
 [web]
   browser = open
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

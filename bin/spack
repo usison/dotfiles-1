@@ -1,2 +1,0 @@
-#!/bin/bash
-mdfind -onlyin $PWD $1 | xargs ack -i $1
